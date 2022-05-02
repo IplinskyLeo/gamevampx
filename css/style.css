@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Press+Start+2P&family=Roboto:wght@700&display=swap');
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(/imagens/video.mp4);
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 30px;
+}
+
+/* img{
+    max-width: 200px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinity;
+    }
+    
+    @keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    } */

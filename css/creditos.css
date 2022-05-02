@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Press+Start+2P&family=Roboto:wght@700&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0px;
+    background-image: url(/imagens/gifCred.gif) ;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    background: white;
+    opacity: 0.8;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    font-size: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    opacity: 0.8;
+}
