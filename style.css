@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Press+Start+2P&family=Roboto:wght@700&display=swap');
 body{
     font-family: 'Press Start 2P', cursive;
-    background-image: url(/imagens/video.mp4);
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .menu{
     display: flex;
@@ -10,22 +13,78 @@ body{
     justify-content: center;
     height: 100vh;
     font-size: 30px;
+    width: 100%;
+}
+.bgVid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: url(/imagens/video.mp4) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
 }
 
-/* img{
-    max-width: 200px;
-    transform: translateY(0px);
-    animation: float 5s ease-in-out infinity;
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #31ff80;
+    list-style: none;
+    width: 100%;
+}
+        .nome{
+            font-size: 60px;
+            transition: 0.2s;
+            
+        }
+            .nome:hover{
+            text-shadow: #c5ffdb 2px 5px;
+        }
+        .by{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 10px;
+            transition: 0.1s;
+            width: 100%;
+
+            animation: neon 1s alternate infinite ease-in-out;
+            --cor-neon: #beffd7;
+        }
+            .by:hover{
+            text-shadow: #c5ffdb 1px px;
+        }
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+
+    animation: neon 1s alternate infinite ease-in-out;
+    --cor-neon: #31ff80;
+}
+a:hover{
+    transform: scale(1.3)
+}
+
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
     }
-    
-    @keyframes float {
-    0% {
-        transform: translateY(0px);
+    to {
+        filter: drop-shadow(0 0 4px var(--cor-neon));
     }
-    50% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-    } */
+}

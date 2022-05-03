@@ -14,6 +14,12 @@ html{
     justify-content: center;
     border: 1px solid #000;
 }
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 li{
     list-style: none;
 }
@@ -22,8 +28,12 @@ li{
     align-items: center;
     justify-content: space-evenly;
     flex-direction:row;
-
-
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 96%;
 }
 /* #4d518c azul #ff9300 amarelo #e05555 vermelho #242424 preto*/
 
@@ -35,11 +45,11 @@ li{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #31ff80;
 }
 .liHeader{
     text-decoration: none;
-    color: white;
+    color: rgb(252, 255, 68);
     transition: 0.5s;
 }
 .liHeader:hover{
@@ -58,12 +68,54 @@ img{
     cursor: pointer;
     max-width: 400px;
 }
+
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 10px var(--cor-neon));
+    }
+}
+img{
+    animation: neon 1s alternate infinite ease-in-out;
+}
+
+.animationp1{
+    --cor-neon: #31ff80;
+}
+.animationp2{
+    --cor-neon: #c4c8ff;
+}
+.animationp3{
+    --cor-neon: #d8dbfd;
+}
+
+
+
+
+
 img:hover{
     transform: scale(1.1)
 }
-
+#p1{
+    transition: 0.2s;
+}
 #p2{
     background-color: #e05555;
+    transition: 0.2s;
+}
+#p3{
+    transition: 0.2s;
+}
+#p1:hover{
+    transform: scale(1.01);
+}
+#p2:hover{
+    transform: scale(1.01);
+}
+#p3:hover{
+    transform: scale(1.01);
 }
 #p3{
     background-color: #4d518c;
@@ -82,14 +134,26 @@ img:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
 .botao{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background: #4d518c;
+
+    /* animation: neon 1s alternate infinite ease-in-out;
+    --cor-neon: #fdd8d8; */
 }
+
+
+
 
 @media (max-width: 1000px)
 {
@@ -99,10 +163,35 @@ img:hover{
         justify-content: space-evenly;
         flex-direction:column;
         border-radius: 10px;
-        border: 1px solid red;
+        border: 1px solid green;
     }
     #p1,#p2,#p3{
         margin-top: 50px;
     }
+    #txt{
+        display: flex;
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+    }
+    a{
+    display: flex;
+    flex-direction: column;
+    color: #31ff80;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+    #txt{
+    display: flex;
+    /* background: #4d518c; */
+    color: #f19300;
+    font-size: max(0.6vh );
+    }
 
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 80px;
+}
 }
