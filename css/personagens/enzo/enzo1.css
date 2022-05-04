@@ -146,6 +146,9 @@ img:hover{
     animation: neon 1s alternate infinite ease-in-out;
     --cor-neon: #ffffff;
 }
+.botao:hover{
+    cursor: pointer;
+}
 
 /* media querry */
 

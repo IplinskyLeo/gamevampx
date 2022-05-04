@@ -38,13 +38,14 @@ li{
 }
 
 /* Parte principal do conteudo da pagina. */
-#txt{
+#p2{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: rgb(255, 255, 255);
     white-space: nowrap;
+    font-size: large;
 }
 main{
     display: flex;
@@ -71,80 +72,29 @@ main{
     flex-direction:column;
     width: 80%;
 }
-#p1{
-    display: flex;
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.2s;
-}
-#p1:hover{
-    transform: scale(1.01);
-}
 img{
-    transition: 0.5s;
-    cursor: pointer;
-    max-width: 400px;
-}
-/* animaçoes */
-@keyframes neon {
-    from{
-        filter: drop-shadow(0 0 0 var(--cor-neon));
-    }
-    to {
-        filter: drop-shadow(0 0 10px var(--cor-neon));
-    }
-}
-img{
-    animation: neon 1s alternate infinite ease-in-out;
-}
-.animationp1{
-    --cor-neon: #31ff80;
-}
-img:hover{
-    transform: scale(1.1)
-}
-
-/* ajuste dentro do box das letras */
-
-#p2{
-    background-color: white;
-    border-radius: 5px;
-    padding: 15px;
-}
-#p3{
-    background-color: rgb(163, 163, 163);
-    border-radius: 5px;
-    padding: 15px;
-}
-#p4{
-    background-color: rgb(129, 129, 129);
-    border-radius: 5px;
-    padding: 15px;
-}
-
-/* #txt1,#txt2, #txt3{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: white;
-    font-size: 10px;
+    justify-content: center;
     width: 100%;
     border-radius: 10px;
-    height: 100px;
-} */
+}
 
 /* botao do seguir */
 .botao{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 50%;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
     background: #4d518c;
     animation: neon 1s alternate infinite ease-in-out;
     --cor-neon: #ffffff;
+}
+.botao:hover{
+    cursor: pointer;
 }
 
 /* media querry */
@@ -157,7 +107,6 @@ img:hover{
         justify-content: space-evenly;
         flex-direction:column;
         border-radius: 10px;
-        border: 1px solid green;
     }
     #p1,#p2,#p3{
         margin-top: 50px;
