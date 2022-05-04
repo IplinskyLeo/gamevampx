@@ -56,23 +56,24 @@ main{
     width: 90%;
     border: 1px solid #31ff80;
     border-radius: 10px;
-    background-color: #f19300;
+    background-color: #4d518c;
     /* background-color: #31ff80; */
 }
 .personagens{
     display: flex;
-    justify-content: center;
     padding: 0px;
-    width: 96%;
+    width: 90%;
 }
 .alternativas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction:column;
-    width: 80%;
+    width: 100%;
 }
 #p1{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 10px;
     transition: 0.2s;
@@ -142,7 +143,7 @@ img:hover{
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
-    background: #4d518c;
+    background: #ff9300;
     animation: neon 1s alternate infinite ease-in-out;
     --cor-neon: #ffffff;
 }

@@ -23,7 +23,7 @@ html{
 }
 a{
     text-decoration: none;
-    color: white;;
+    color: #31ff80;
 }
 .liHeader{
     text-decoration: none;
@@ -38,14 +38,13 @@ li{
 }
 
 /* Parte principal do conteudo da pagina. */
-#p2{
+#txt{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     color: rgb(255, 255, 255);
     white-space: nowrap;
-    font-size: large;
 }
 main{
     display: flex;
@@ -57,42 +56,94 @@ main{
     width: 90%;
     border: 1px solid #31ff80;
     border-radius: 10px;
-    background-color: #31ff80;
+    background-color: #4d518c;
     /* background-color: #31ff80; */
 }
 .personagens{
     display: flex;
-    justify-content: center;
     padding: 0px;
-    width: 96%;
+    width: 90%;
 }
 .alternativas{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction:column;
-    width: 80%;
+    width: 100%;
 }
-img{
+#p1{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     border-radius: 10px;
+    transition: 0.2s;
 }
-#txt{
-    color: white;
+#p1:hover{
+    transform: scale(1.01);
 }
+img{
+    transition: 0.5s;
+    cursor: pointer;
+    max-width: 400px;
+}
+/* animaçoes */
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to {
+        filter: drop-shadow(0 0 10px var(--cor-neon));
+    }
+}
+img{
+    animation: neon 1s alternate infinite ease-in-out;
+}
+.animationp1{
+    --cor-neon: #31ff80;
+}
+img:hover{
+    transform: scale(1.1)
+}
+
+/* ajuste dentro do box das letras */
+
+#p2{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+#p3{
+    background-color: rgb(163, 163, 163);
+    border-radius: 5px;
+    padding: 15px;
+}
+#p4{
+    background-color: rgb(129, 129, 129);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* #txt1,#txt2, #txt3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: 10px;
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+} */
 
 /* botao do seguir */
 .botao{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 150px;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
-    background: #4d518c;
+    background: #ff9300;
     animation: neon 1s alternate infinite ease-in-out;
     --cor-neon: #ffffff;
 }
@@ -110,6 +161,7 @@ img{
         justify-content: space-evenly;
         flex-direction:column;
         border-radius: 10px;
+        border: 1px solid green;
     }
     #p1,#p2,#p3{
         margin-top: 50px;
@@ -118,7 +170,6 @@ img{
         display: flex;
         font-size: 0.5rem;
         flex-wrap: wrap;
-        color: white;
     }
     a{
     display: flex;

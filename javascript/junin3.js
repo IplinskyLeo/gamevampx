@@ -1,6 +1,6 @@
 // fase 1 carlinhos r: 1
 function btnResposta ( ) {
-    var resposta = prompt("Escolha 1 ou 2");
+    var resposta = prompt("Escolha 1, 2 ou 3.");
     while (true) {
         if(resposta == 1) {
             alert ('Escolha errada, Game Over!');
@@ -14,7 +14,7 @@ function btnResposta ( ) {
         }
         else if (resposta == 3) {
             alert ('Ele apenas estava desidratado, descansou um pouco e bebeu água e minutos depois já estava se divertindo novamente.');
-            window.location.href = "../../../html/personagens/junin/junin_3.html";
+            window.location.href = "../../../html/win.html";
             break;
         }
         }

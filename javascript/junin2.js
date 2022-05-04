@@ -1,6 +1,6 @@
 // fase 1 carlinhos r: 1
 function btnResposta ( ) {
-    var resposta = prompt("Escolha 1 ou 2");
+    var resposta = prompt("Escolha 1, 2 ou 3.");
     while (true) {
         if(resposta == 1) {
             alert ('Escolha errada, Game Over!');
