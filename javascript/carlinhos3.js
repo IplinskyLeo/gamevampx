@@ -4,12 +4,12 @@ function btnResposta ( ) {
     while (true) {
         if(resposta == 2) {
             alert('Quando chegam lá, ele ganha um beijo. Dias depois, eles começam a sair e algumas semanas depois já estão namorando.')
-            window.location.href = "/html/win.html";
+            window.location.href = "../../../../html/win.html";
             break; 
         }
         else if (resposta == 1) {
             alert ('Escolha errada, Game Over!');
-            window.location.href = "/html/creditos.html";
+            window.location.href = "../../../../html/creditos.html";
             break;
         }
         else {
