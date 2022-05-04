@@ -7,7 +7,6 @@ body{
     background-size: cover;
     height: 100%;
 }
-
 .bgVid{
     position: absolute;
     right: 0;
@@ -21,7 +20,6 @@ body{
     background-size: cover;
     filter: blur(3px);
 }
-
 main{
     height: 82vh;
     width: 100%;
@@ -45,17 +43,16 @@ header{
     display: flex;
     align-items: center;
     justify-content:baseline;
-    background: white;
-    opacity: 0.8;
+    background: #4d518c;
+    opacity: 0.9;
+    color: white;
 }
-
 /* #4d518c azul #ff9300 amarelo #e05555 vermelho #242424 preto*/
-
-
 a{
     padding-left: 35px;
     color: #000000;
     text-decoration: none;
+    color: white;
 }
 .logo{
     color: #31ff80;
@@ -68,9 +65,8 @@ ul{
 li{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
 footer{
     font-size: 7px;
     width: 100%;
@@ -78,6 +74,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background: white;
-    opacity: 0.8;
+    background: #4d518c;
+    opacity: 0.9;
+    color: white;
 }

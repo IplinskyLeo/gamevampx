@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Press+Start+2P&family=Roboto:wght@700&display=swap');
-
+/* Corpo da pagina Inteiro */
+/* Paleta de cores: #4d518c azul #ff9300 amarelo #e05555 vermelho #242424 preto*/
 html{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     background-color: #242424;
     font-family: 'Press Start 2P', cursive;
-
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000;
 }
 .flex-container{
     display: flex;
@@ -20,23 +14,7 @@ html{
     justify-content: center;
     flex-direction: column;
 }
-li{
-    list-style: none;
-}
-.personagens{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction:row;
-    border-radius: 10px;
-    border: 1px solid red;
-    padding: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 96%;
-}
-/* #4d518c azul #ff9300 amarelo #e05555 vermelho #242424 preto*/
-
+/* Parte do NavBar */
 .header{
     display: flex;
     padding: 8px;
@@ -55,6 +33,24 @@ a{
 .liHeader:hover{
 transform: scale(1.3)
 }
+
+/* Parte principal do conteudo da pagina. */
+
+.personagens{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:row;
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 96%;
+}
+li{
+    list-style: none;
+}
 #p1,#p2,#p3{
     display: flex;
     flex-direction: column;
@@ -68,7 +64,7 @@ img{
     cursor: pointer;
     max-width: 400px;
 }
-
+/* animaçoes */
 @keyframes neon {
     from{
         filter: drop-shadow(0 0 0 var(--cor-neon));
@@ -80,24 +76,21 @@ img{
 img{
     animation: neon 1s alternate infinite ease-in-out;
 }
-
 .animationp1{
     --cor-neon: #31ff80;
 }
 .animationp2{
-    --cor-neon: #c4c8ff;
+    --cor-neon: #31ff80;
 }
 .animationp3{
-    --cor-neon: #d8dbfd;
+    --cor-neon: #31ff80;
 }
-
-
-
-
-
 img:hover{
     transform: scale(1.1)
 }
+
+/* ajuste fino */
+
 #p1{
     transition: 0.2s;
 }
@@ -138,6 +131,7 @@ img:hover{
     color: rgb(255, 255, 255);
     white-space: nowrap;
 }
+/* botao do aleatorio */
 .botao{
     display: flex;
     flex-direction: column;
@@ -147,13 +141,11 @@ img:hover{
     border-radius: 10px;
     padding: 10px;
     background: #4d518c;
-
-    /* animation: neon 1s alternate infinite ease-in-out;
-    --cor-neon: #fdd8d8; */
+    animation: neon 1s alternate infinite ease-in-out;
+    --cor-neon: #ffffff;
 }
 
-
-
+/* media querry */
 
 @media (max-width: 1000px)
 {
@@ -186,12 +178,10 @@ img:hover{
     color: #f19300;
     font-size: max(0.6vh );
     }
-
-
 .header{
     display: flex;
     flex-direction: column;
     padding: 10px;
     height: 80px;
-}
+    }
 }
