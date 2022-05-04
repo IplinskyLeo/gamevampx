@@ -9,7 +9,7 @@ body{
 }
 .bgVid{
     z-index: -100;
-    background: url(/imagens/video.gif) no-repeat center;
+    background: url(../video.gif) no-repeat center;
     background-size: cover;
 }
 main{
