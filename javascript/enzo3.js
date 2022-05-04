@@ -3,7 +3,7 @@ function btnResposta ( ) {
     var resposta = prompt("Escolha 1 ou 2");
     while (true) {
         if(resposta == 2) {
-            alert('Quando chegam lá, ele ganha um beijo. Dias depois, eles começam a sair e algumas semanas depois já estão namorando.')
+            alert('Eles se divertem a bessa no parque e tem uma memória incrível desse dia para sempre!');
             window.location.href = "/html/win.html";
             break; 
         }
